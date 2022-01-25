@@ -11,7 +11,7 @@ function displayRocketData(rocketId) {
         "rocket": "${rocketId}"
         }
     }`
-    const url = "http://api.spacexdata.com/v4/launches/query"
+    const url = "https://api.spacexdata.com/v4/launches/query"
 
     fetch(url, {
         method: "POST",
