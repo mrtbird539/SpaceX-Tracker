@@ -32,7 +32,7 @@ function handleFormSubmit(event) {
         return toast$.toast("show");
     }
     else {
-    location.assign(`./rocket.html?q=${inputVal}`)
+        location.assign(`./rocket.html?q=${inputVal}`)
     };
 
 }
