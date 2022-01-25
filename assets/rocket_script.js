@@ -45,4 +45,4 @@ function displayRocketData(rocketId) {
 }
 
 
-getRocketId()
+getRocketId();
