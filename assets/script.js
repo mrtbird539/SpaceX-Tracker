@@ -8,6 +8,9 @@ function renderRocketOptions() {
 
     fetch(url)
         .then(function (response) {
+            if (!response.ok) {
+                throw response.json();
+            }
             return response.json();
         })
         .then(function (data) {
