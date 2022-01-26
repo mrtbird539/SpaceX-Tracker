@@ -1,6 +1,29 @@
+body {
+  background-color: darkgray;
+}
 .toast {
-    background-color: red;
-    position: absolute;
-    top: 0;
-    right: 0;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.input-field {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+button {
+  justify-content: flex-start;
+}
+.text {
+  text-align: center;
+}
+svg {
+  justify-content: center;
+}
+#greeting{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }

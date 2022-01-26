@@ -1,3 +1,4 @@
+//JQuery
 const rocketBtn$ = $(".rocket-btn")
 const select$ = $("select");
 const toast$ = $('.toast');
@@ -8,12 +9,14 @@ function renderRocketOptions() {
 
     fetch(url)
         .then(function (response) {
+            //Bail if fetch fails
             if (!response.ok) {
                 throw response.json();
             }
             return response.json();
         })
         .then(function (data) {
+            //Loops over returned data and creates options for dropdown to dynamically show Rockets
             for (var i = 0; i < data.length; i++) {
                 let rocketName = data[i].name;
                 let rocketId = data[i].id;
@@ -26,7 +29,7 @@ function renderRocketOptions() {
             return
         });
 }
-
+//Function to input UUID of Rocket into URL to allow it to be extrapolated on next page's POST Request
 function handleFormSubmit(event) {
     event.preventDefault();
     const inputVal = $("select option:selected").val();
